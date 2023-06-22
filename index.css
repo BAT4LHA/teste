@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(wallpaperflare.com_wallpaper\ \(9\).jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+body::before{
+    content: '';
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+header{
+    padding: 90px;
+    position: relative;
+    z-index: 10;
+}
+.container{
+    padding: 70px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 530px;
+    margin-left: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0,.7);
+}
+.container h2{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.container .box-input{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.container .box-input input{
+    height: 48px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    outline: none;
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
+}
+.container .box-input input:hover{
+    background-color: #444;
+}
+.container .box-input .btn{
+    height: 50px;
+    width: 100%;
+    background-color: #00008B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.container .box-input .btn:hover{
+    background-color: #000080;
+}
+.support{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 15px;
+    margin: 30px 0 30px 0;
+}
+.support .remember{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #fff;
+}
+.help a{
+    color: #b3b3b3;
+    text-decoration: none;
+}
+.help a:hover{
+    color: #53a7ea;
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #b3b3b3;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
